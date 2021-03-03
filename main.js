@@ -1,6 +1,6 @@
 const cliProgress = require('cli-progress');
 const _colors = require('colors');
-import run from './scripts_by_day/2020/day12/part2';
+import run from './problems/321';
 
 console.log('starting script');
 const b1 = new cliProgress.SingleBar({
@@ -27,7 +27,7 @@ if (need_bar) {
 while (k !== trials) {
     let initial_time = new Date();
     while (i !== intervals) {
-        res = run();
+        res = run("12:01");
         i++;
         b1.increment();
     }
