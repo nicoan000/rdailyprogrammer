@@ -1,8 +1,5 @@
 // https://www.reddit.com/r/dailyprogrammer/comments/ffxabb/20200309_challenge_383_easy_necklace_matching/
 
-const root = "";
-const contains = "";
-
 export default (root, contains) => {
     let i = 0;
     let appearences = 0;
