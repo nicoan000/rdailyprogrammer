@@ -1,4 +1,4 @@
-import solution from '../problems/379';
+import solution, { optional_solution } from '../problems/379';
 
 const cases = [
     [0, 0],

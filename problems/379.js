@@ -7,7 +7,7 @@ const tax_brackets = [
     {min: 100000, max: null, rate: .40},
 ];
 
-export default (n, brackets = tax_brackets) => {
+const base_solution = (n, brackets = tax_brackets) => {
     let due = 0;
 
     tax_brackets.forEach(({min, max, rate}) => {
@@ -19,4 +19,10 @@ export default (n, brackets = tax_brackets) => {
     });
 
     return Math.floor(due);
-}
+};
+
+const optional_solution = () => {
+    // work on this later
+};
+
+export { base_solution as default, optional_solution };
